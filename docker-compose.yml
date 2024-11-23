@@ -2,7 +2,7 @@
 
 services:
   app:
-    image: username/my-node-app:latest
+    image: nehalrami492/my-node-app:latest
     container_name: my_node_app
     ports:
       - "3000:3000"
@@ -22,3 +22,5 @@ services:
       - "3001:3000"
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin
+
+
