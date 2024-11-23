@@ -23,8 +23,10 @@ jobs:
 
     # Build the Docker image
     - name: Build Docker Image
-      run: docker build -t username/my-node-app:latest .
+      run: docker build -t nehalrami492/my-node-app:latest .
 
     # Push the Docker image to DockerHub
     - name: Push Docker Image
-      run: docker push username/my-node-app:latest
+      run: docker push nehalrami492/my-node-app:latest
+
+
