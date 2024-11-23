@@ -1,20 +1,19 @@
-# Use an official Node.js runtime as the base image
-FROM node:16-alpine
+FROM node:18-alpine
 
-# Set the working directory
-WORKDIR /usr/src/index
+# Set working directory
+WORKDIR /usr/src/app
 
-# Copy package.json and package-lock.json
+# Copy dependencies
 COPY package*.json ./
 
 # Install dependencies
 RUN npm install
 
-# Copy the rest of the application code
+# Copy the application code
 COPY . .
 
-# Expose the application port
+# Expose application port
 EXPOSE 3000
 
-# Command to start the app
+# Start the application
 CMD ["npm", "start"]

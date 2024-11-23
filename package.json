@@ -1,16 +1,13 @@
 {
-  "name": "demo-of-all-integration",
+  "name": "my-node-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "My Node.js App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "demo-of-all-integration": "file:"
+    "express": "^4.18.2",
+    "my-node-app": "file:"
   }
 }
